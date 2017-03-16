@@ -4,12 +4,12 @@ JavaTrack Projekt: Command Handler.
 This will be the project that will accompany us during the powercoders java track. We will learn the following concepts here:
 * Input / Output
 * Control structures
-** switch
-** while
-** if
+ * switch
+ * while
+ * if
 * OO concepts
-** interfaces
-** inheritance
+ * interfaces
+ * inheritance
 
 # Task
 
