@@ -51,6 +51,8 @@ public class Worker {
                     foundflag = true;
                 }
             }
+
+            //print Wrong Command
             if(!foundflag) System.out.println("Wrong Command");
 
 
