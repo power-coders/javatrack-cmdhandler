@@ -2,6 +2,8 @@ package consoleHandler;
 
 import taskmanagement.TaskList;
 
+import java.util.Scanner;
+
 /**
  * Created by joris on 16.03.17.
  */
@@ -21,6 +23,7 @@ abstract class Command {
     public String getDescription() {
         return description;
     }
-    public abstract void doAction(TaskList taskList);
+    //Abstract Method
+    public abstract void doAction(TaskList taskList, Scanner scanner);
 
 }

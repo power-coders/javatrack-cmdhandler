@@ -2,6 +2,7 @@ package taskmanagement;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -18,6 +19,7 @@ public class TaskList {
 
     public void sortTaskbyName(){
         tasklist.sort((t1,t2)-> t1.getName().compareTo(t2.getName()));
+
     }
     public void sortTaskbyDate(){
         tasklist.sort((t1,t2) -> t1.getDueDate().compareTo(t2.getDueDate()));

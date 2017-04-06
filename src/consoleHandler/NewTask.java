@@ -15,9 +15,8 @@ public class NewTask extends Command {
         super(name, description);
     }
 
-    public void doAction(TaskList taskList) {
+    public void doAction(TaskList taskList, Scanner scanner) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/MM/yyyy");
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter Task name");
         String taskname = scanner.nextLine();
         System.out.println("Enter a startdate like dd/mm/yyyy");

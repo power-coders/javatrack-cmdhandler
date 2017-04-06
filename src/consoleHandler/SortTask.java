@@ -2,6 +2,8 @@ package consoleHandler;
 
 import taskmanagement.TaskList;
 
+import java.util.Scanner;
+
 /**
  * Created by joris on 30.03.17.
  */
@@ -12,7 +14,7 @@ public class SortTask extends Command {
     }
 
     @Override
-    public void doAction(TaskList taskList) {
+    public void doAction(TaskList taskList, Scanner scanner) {
         taskList.sortTaskbyName();
     }
 }

@@ -3,6 +3,8 @@ package consoleHandler;
 import taskmanagement.Task;
 import taskmanagement.TaskList;
 
+import java.util.Scanner;
+
 /**
  * Created by joris on 16.03.17.
  */
@@ -12,7 +14,7 @@ public class Help extends Command {
     }
 
     @Override
-    public void doAction(TaskList taskList) {
+    public void doAction(TaskList taskList, Scanner scanner) {
         System.out.println("-----------------------------------------------------------------------------");
         System.out.printf("%-20s %-50s", "Command", "Description");
         System.out.println();

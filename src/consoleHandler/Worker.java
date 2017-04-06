@@ -14,13 +14,14 @@ import java.util.Scanner;
  */
 public class Worker {
     public static boolean done = false;
-    public static Scanner scanner = new Scanner(System.in);
+
     public static List<Command> cmdList = new ArrayList<>();
 
     public static void main(String[] args) {
         TaskList taskList = new TaskList();
 
         //Initialize Commandlist
+        Scanner scanner = new Scanner(System.in);
 
 
         //Add Commands
@@ -34,7 +35,7 @@ public class Worker {
         cmdList.add(new SortTask("sort tasks", "Sorts Task by name"));
 
         //Prints all available commands
-        cmdList.stream().filter(cmd -> cmd.getName().equals("help")).findFirst().get().doAction(taskList);
+        cmdList.stream().filter(cmd -> cmd.getName().equals("help")).findFirst().get().doAction(taskList, scanner);
 
         //Loop to ask for User action
         while (!done){
@@ -47,12 +48,15 @@ public class Worker {
             for(Command cmd : cmdList){
 
                 if(cmd.getName().equals(command)) {
-                    cmd.doAction(taskList);
+                    cmd.doAction(taskList, scanner);
                     foundflag = true;
                 }
             }
 
             //print Wrong Command
+
+
+
             if(!foundflag) System.out.println("Wrong Command");
 
 

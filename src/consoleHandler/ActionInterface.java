@@ -7,5 +7,5 @@ import taskmanagement.TaskList;
  */
 @FunctionalInterface
 public interface ActionInterface {
-    public void doAction(TaskList taskList);
+    public void doAction2(TaskList taskList);
 }

@@ -14,8 +14,7 @@ public class FindTasks extends Command {
     }
 
     @Override
-    public void doAction(TaskList taskList) {
-        Scanner scanner = new Scanner(System.in);
+    public void doAction(TaskList taskList, Scanner scanner) {
         System.out.println("Enter Task name");
         String name = scanner.nextLine();
         System.out.println(taskList.findByName(name));

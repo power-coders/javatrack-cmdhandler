@@ -2,6 +2,8 @@ package consoleHandler;
 
 import taskmanagement.TaskList;
 
+import java.util.Scanner;
+
 /**
  * Created by joris on 16.03.17.
  */
@@ -11,7 +13,7 @@ public class GetTasks extends Command {
     }
 
     @Override
-    public void doAction(TaskList taskList) {
+    public void doAction(TaskList taskList, Scanner scanner) {
         taskList.printTasks();
     }
 }
